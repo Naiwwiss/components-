@@ -1,38 +1,72 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1{
+  font-size: 50px;
+  line-height: 60px;
+  margin:25px 0;
   text-align: center;
+  color: #555 ;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.anime {
+  animation: rotation 2s infinite linear;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes rotation {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(359deg);
   }
+}
+body{
+  background-color: grey;
+}
+h2{
+  padding: 20px;
+  color: #fff;
+}
+.adress{
+  text-align:right;
+}
+.title h1{
+  animation:tat 2s infinite linear ;
+}
+@keyframes tat {
+	0% {
+		color: black;
+		
+	}
+	50% {
+		color: white;
+	}
+  100%{
+    color: #555;
+  }
+}
+.address {
+  background-color: #555;
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-top:50px;
+  margin-bottom: 50px;
+}
+.address{
+	transform: rotateY(0deg);
+	animation: rotateAnimation 5s linear infinite;
+}
+
+@keyframes rotateAnimation {
+	from {transform: rotateY(0deg);}
+	to {transform: rotateY(360deg);}
 }
